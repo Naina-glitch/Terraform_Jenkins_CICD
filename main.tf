@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket1" {
-	bucket = "naina1-s3bucket-date"
+	bucket = "naina2-s3bucket-date"
 }
 
 resource "aws_s3_bucket" "bucket2" {
