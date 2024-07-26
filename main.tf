@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "bucket1" {
-	bucket = "naina-first-bucket"
+	bucket = "naina1-s3bucket-date"
 }
 
 resource "aws_s3_bucket" "bucket2" {
-        bucket = "naina-second-bucket"
+      
     
 }
 
@@ -13,10 +13,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "naina-s3bucket-date"
+    bucket         = "naina1-s3bucket-date"
     key            = "globalstate/s3/terraform.tfstate"
     region         = "eu-west-1"
-    dynamodb_table = "naina-date-dblocks"
+    dynamodb_table = "naina1-date-dblocks"
     encrypt        = true
   }
 }
